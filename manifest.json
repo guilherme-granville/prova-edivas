@@ -1,0 +1,22 @@
+{
+    "name": "Cadastro de Eventos",
+    "short_name": "Eventos",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#4CAF50",
+    "description": "Uma aplicação para cadastro de eventos",
+    "icons": [
+      {
+        "src": "icons/ic192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/ic512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
