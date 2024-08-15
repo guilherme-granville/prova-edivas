@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastro de Eventos">
+    <title>Cadastro de Eventos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+                    console.log('Service Worker registrado com sucesso:', registration.scope);
+                }, function(error) {
+                    console.log('Falha no registro do Service Worker:', error);
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Eventos</h1>
+        <form method="POST" action="">
+            <label for="nome_evento">Nome do Evento:</label>
+            <input type="text" id="nome_evento" name="nome_evento" required>
+
+            <label for="data_evento">Data:</label>
+            <input type="date" id="data_evento" name="data_evento" required>
+
+            <label for="local_evento">Local:</label>
+            <input type="text" id="local_evento" name="local_evento" required>
+
+            <label for="horario_evento">Horário:</label>
+            <input type="time" id="horario_evento" name="horario_evento" required>
+
+            <label for="responsavel_evento">Responsável:</label>
+            <input type="text" id="responsavel_evento" name="responsavel_evento" required>
+
+            <label for="capacidade_maxima">Capacidade Máxima:</label>
+            <input type="number" id="capacidade_maxima" name="capacidade_maxima" required>
+
+            <button type="submit">Cadastrar Evento</button>
+        </form>
+        <div id="message">
+  
+        </div>
+    </div>
+</body>
+</html>
